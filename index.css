@@ -1,0 +1,111 @@
+body {
+    background-color: #ecf0f1;
+    color:white;
+}
+
+.main-contents {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-wrap{
+    background-color: #0000006b;
+    width: inherit;
+    height: 250px;
+    margin-right:15px;
+}
+
+h1 {
+    font-size: 50px;
+   text-align: center; 
+   color:white;
+   transition: color .5s ease-in-out;
+   -webkit-transition: color .5s ease-in-out;
+   -moz-transition: color .5s ease-in-out;
+   -ms-transition: color .5s ease-in-out;
+   -o-transition: color .5s ease-in-out;
+   margin: 0px;
+   margin-top:20px;
+   margin-bottom: 15px;
+}
+
+h3 {
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.greetingwrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.nm-reset{
+    text-align: center;
+    text-align: -webkit-center;
+    margin-bottom: 15px;
+}
+
+.clicked {
+    color: blue;
+
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.form,
+.greeting,
+.btn {
+    display: none;
+}
+
+.showing {
+    display: block;
+    text-align: center;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+    -webkit-animation: fadeIn 0.5s linear;
+}
+
+.js-toDoForm {
+    text-align:center;
+}
+
+.js-weather {
+    text-align:center;
+}
+
+.todo-Wrap{
+    text-align: center;
+}
+
+.js-toDoList{
+    list-style: none;
+    margin: 0;
+    margin-top: 50px;
+    margin-right: 40px;
+}
